@@ -1,0 +1,11 @@
+# Build directories
+build/
+
+# Compiler and linker outputs
+*.o
+*.elf
+*.elf.*
+*.x
+
+# Disk images
+*.xdf
