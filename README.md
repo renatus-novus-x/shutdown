@@ -3,6 +3,10 @@
 [English](README.md) | [日本語](README.ja.md)
 
 <p align="center">
+  <img src="images/teaser.gif" alt="shutdown running on the Sharp X68000" width="824" height="580">
+</p>
+
+<p align="center">
   <strong><a href="https://uraraworks.github.io/WebX68k/?cpu=10&ram=12&fd1=https://cdn.jsdelivr.net/gh/renatus-novus-x/shutdown@main/dist/shutdown.zip&run=1">▶ Launch shutdown in WebX68k</a></strong>
 </p>
 
