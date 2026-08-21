@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <strong><a href="https://uraraworks.github.io/WebX68k/?cpu=10&ram=12&fd1=https://cdn.jsdelivr.net/gh/renatus-novus-x/shutdown@main/dist/shutdown.zip&run=1">▶ WebX68kでshutdownを起動</a></strong>
+  <strong><a href="https://uraraworks.github.io/WebX68k/?cpu=10&ram=12&fd1=https://raw.githubusercontent.com/renatus-novus-x/shutdown/main/dist/shutdown.zip&run=1">▶ WebX68kでshutdownを起動</a></strong>
 </p>
 
 Sharp X68000 / Human68k用の、電源オフと再起動を行う最小ユーティリティです。
