@@ -40,10 +40,11 @@ Required host tools:
 sudo apt install python3 curl unar
 ```
 
-Build all artifacts:
+From the repository root, enter `src` and build all artifacts:
 
 ```sh
-make -C src
+cd src
+make
 ```
 
 The Makefile downloads Human68k 3.02 and a pinned `xdftool.py`, then creates:
@@ -57,8 +58,8 @@ dist/shutdown.zip  Distribution archive with the Human68k license
 Inspect the generated disk image with:
 
 ```sh
-make -C src check-xdf
+make check-xdf
 ```
 
-Remove generated files with `make -C src clean`, or also remove downloaded
-support files with `make -C src distclean`.
+Remove generated files with `make clean`, or also remove downloaded
+support files with `make distclean`.

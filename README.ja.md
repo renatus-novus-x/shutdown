@@ -40,10 +40,11 @@ elf2x68kを導入し、`m68k-xelf-gcc`に`PATH`が通ったWSLまたはLinux環�
 sudo apt install python3 curl unar
 ```
 
-すべての成果物を作成します。
+リポジトリ直下から`src`へ移動し、すべての成果物を作成します。
 
 ```sh
-make -C src
+cd src
+make
 ```
 
 MakefileはHuman68k 3.02とバージョンを固定した`xdftool.py`をダウンロードし、次の
@@ -58,8 +59,8 @@ dist/shutdown.zip  Human68k許諾条件を含む配布用アーカイブ
 生成したディスクイメージの内容を確認する場合は次を実行します。
 
 ```sh
-make -C src check-xdf
+make check-xdf
 ```
 
-生成ファイルは`make -C src clean`で削除できます。ダウンロードした補助ファイルも
-削除する場合は`make -C src distclean`を使用します。
+生成ファイルは`make clean`で削除できます。ダウンロードした補助ファイルも
+削除する場合は`make distclean`を使用します。
