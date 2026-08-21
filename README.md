@@ -1,21 +1,29 @@
 # shutdown
 
+[English](README.md) | [日本語](README.ja.md)
+
+<p align="center">
+  <strong><a href="https://uraraworks.github.io/WebX68k/?cpu=10&ram=12&fd1=https://cdn.jsdelivr.net/gh/renatus-novus-x/shutdown@main/dist/shutdown.zip&run=1">▶ Launch shutdown in WebX68k</a></strong>
+</p>
+
 A minimal Human68k utility for powering off or rebooting Sharp X68000 systems.
 
 ## Usage
 
 ```text
-shutdown -h now    Power off the system
-shutdown -r now    Reboot the system
-shutdown -?        Show usage
-shutdown --help    Show usage
+shutdown -h now        Power off the system
+shutdown -r now        Reboot the system
+shutdown --direct now  Power off through $E8E00F (experimental)
+shutdown -?            Show usage
+shutdown --help        Show usage
 ```
 
 Running `shutdown` without arguments only displays the usage. This is also what
 the generated disk image does from `AUTOEXEC.BAT` after Human68k starts.
 
-The command uses X68000 `TRAP #10`. Complete file operations before shutting
-down or rebooting.
+The normal power-off and reboot commands use X68000 `TRAP #10`. The experimental
+`--direct` command bypasses that handler and writes directly to `$E8E00F` for
+hardware diagnosis. Complete file operations before using any shutdown command.
 
 ## Build
 
